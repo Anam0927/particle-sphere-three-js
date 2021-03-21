@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+}
+
+#canvas {
+  --size: 35vw;
+  width: var(--size);
+  height: var(--size);
+
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+
+  transform: translate(-50%, 0);
+
+  transition: transform 0.5s ease-out;
+  transform-origin: 50% 100%;
+}
+
+button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 5px;
+
+  padding: 1rem 2rem;
+
+  background-color: transparent;
+  border: 1px solid #8aea92;
+  color: #8aea92;
+  outline: none;
+  cursor: pointer;
+}
