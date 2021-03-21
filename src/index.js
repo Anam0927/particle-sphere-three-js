@@ -66,19 +66,19 @@ scene.add(sphereSmallest);
 // : OBJECTS
 // -- create vertices
 const vertices1 = [];
-for (let i = 0; i < NUM_OF_PARTICLES; i++) {
+for (let i = 0; i < NUM_OF_PARTICLES * 0.33; i++) {
   const [x, y, z] = positionCalculator(RADIUS);
   vertices1.push(x, y, z);
 }
 
 const vertices2 = [];
-for (let i = 0; i < NUM_OF_PARTICLES * 0.75; i++) {
+for (let i = 0; i < NUM_OF_PARTICLES * 0.66; i++) {
   const [x, y, z] = positionCalculator((RADIUS / 3) * 2);
   vertices2.push(x, y, z);
 }
 
 const vertices3 = [];
-for (let i = 0; i < NUM_OF_PARTICLES * 0.5; i++) {
+for (let i = 0; i < NUM_OF_PARTICLES; i++) {
   const [x, y, z] = positionCalculator(RADIUS / 3);
   vertices3.push(x, y, z);
 }
