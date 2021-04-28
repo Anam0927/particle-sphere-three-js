@@ -11,6 +11,13 @@ body {
 
 #canvas {
   --size: 35vw;
+  @media (max-width: 768px) {
+    --size: 50vw;
+  }
+  @media (max-width: 480px) {
+    --size: 75vw;
+  }
+
   width: var(--size);
   height: var(--size);
 
